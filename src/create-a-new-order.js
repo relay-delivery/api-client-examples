@@ -45,13 +45,13 @@ const fetch = require('node-fetch');
 	const result = await fetch('https://api.relay.delivery/v2/order', req);
 	const response = await result.json();
 
-	if (result.status != 200) {
+	if (result.status != 201) {
 		console.log(`the order was not accepted`, response);
 		return;
 	}
 
 	const { orderKey } =  response.order;
-	console.log(`${orderKey} was created.`);
+	console.log(`${orderKey} was accepted.`);
 })();
 
 
