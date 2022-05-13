@@ -54,7 +54,7 @@ function createPostRequest(body) {
 		},
 	});
 
-	const quoteResponse = await fetch('https://api.relay.delivery/v2/quote', quoteReq);
+	const quoteResponse = await fetch('https://dev-api.relay.delivery/v2/quote', quoteReq);
 	const quoteResult = await quoteResponse.json();
 
 	if (quoteResponse.status != 201) {
@@ -78,7 +78,7 @@ function createPostRequest(body) {
 		},
 	});
 
-	const orderResponse = await fetch('https://api.relay.delivery/v2/order', orderReq);
+	const orderResponse = await fetch('https://dev-api.relay.delivery/v2/order', orderReq);
 	const orderResult = await orderResponse.json();
 
 	if (orderResult.status != 201) {
