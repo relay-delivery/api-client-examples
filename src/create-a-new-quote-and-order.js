@@ -81,7 +81,8 @@ function createPostRequest(body) {
 	const orderResponse = await fetch('https://dev-api.relay.delivery/v2/order', orderReq);
 	const orderResult = await orderResponse.json();
 
-	if (orderResult.status != 201) {
+
+	if (orderResponse.status != 201) {
 		console.log(`an order was not created`, orderResult);
 		return;
 	}
