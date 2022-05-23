@@ -37,16 +37,6 @@ function createPostRequest(body) {
 		},
 	};
 
-	const req = {
-		headers: {
-			'x-relay-auth': RELAY_API_KEY_V2,
-			'Content-Type': 'application/json; charset=utf-8',
-		},
-		method: 'POST',
-		body: JSON.stringify({
-		}),
-	};
-
 	const quoteReq = createPostRequest({
 		quote: {
 			producer,
