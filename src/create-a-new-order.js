@@ -42,7 +42,7 @@ const fetch = require('node-fetch');
 		}),
 	};
 
-	const result = await fetch('https://api.relay.delivery/v2/order', req);
+	const result = await fetch('https://dev-api.relay.delivery/v2/order', req);
 	const response = await result.json();
 
 	if (result.status != 201) {
