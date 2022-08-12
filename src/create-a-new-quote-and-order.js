@@ -16,6 +16,7 @@ function createPostRequest(body) {
 	const producer = {
 		name: 'Classy Chocolate Store',
 		phone: '3475555555',
+		specialInstructions: 'The chocolate is very delicate!!',
 		location: {
 			address1: '440 Park Ave South',
 			apartment: '99th Floor',
@@ -28,6 +29,7 @@ function createPostRequest(body) {
 	const consumer = {
 		name: 'Happy Customer',
 		phone: '2125555555',
+		specialInstructions: 'Very hungry. Proceed with caution',
 		location: {
 			address1: '17 west 17th Street',
 			apartment: '2nd Floor',
